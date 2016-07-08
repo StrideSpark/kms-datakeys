@@ -1,0 +1,21 @@
+{
+  "name": "kms-datakeys",
+  "version": "1.0.0",
+  "description": "encrypt / decrypt customer secrets using kms datakeys (with promises and typescript definitions)",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "tape",
+    "prepublish": "tsc --declaration"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "2.4.6"
+  },
+  "repository": "StrideSpark/kms-datakeys",
+  "devDependencies": {
+    "tape": "4.6.0",
+    "typings": "^1.3.1"
+  }
+}

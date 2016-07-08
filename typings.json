@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "aws-sdk": "github:ingenieux/aws-sdk-typescript#d05ce016912db58f0b88137fac258838f1e3d1b4",
+    "node": "registry:dt/node#6.0.0+20160621231320"
+  }
+}

@@ -10,7 +10,7 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
     "aws-sdk": "2.4.6"
   },
   "repository": "StrideSpark/kms-datakeys",

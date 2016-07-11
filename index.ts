@@ -9,7 +9,7 @@ function encrypt(password: any, obj: any): Buffer {
     return Buffer.concat([cipher.update(new Buffer(json, 'utf8')), cipher.final()]);
 }
 
-interface EncryptionResult {
+export interface EncryptionResult {
     encryptedKey: Buffer,
     encryptedObj: Buffer
 }

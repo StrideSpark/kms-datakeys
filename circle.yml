@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: 6.3.0
+dependencies:
+  pre:
+    - mv circle.npmrc ~/.npmrc
+test:
+  pre:
+    - typings install && tsc
+  post:
+    - mv coverage/* $CIRCLE_ARTIFACTS/
+deployment:
+  npm:
+    branch: master
+    commands:
+      - npm run 2npm

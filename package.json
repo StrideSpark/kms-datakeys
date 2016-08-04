@@ -5,17 +5,23 @@
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "test": "tape",
-    "prepublish": "tsc --declaration"
+    "test": "istanbul cover _mocha",
+    "prepublish": "typings install && tsc --declaration",
+    "2npm": "publish"
   },
   "author": "",
   "license": "MIT",
-  "peerDependenciesnpm": {
+  "peerDependencies": {
     "aws-sdk": ">=2.4.6"
   },
   "repository": "StrideSpark/kms-datakeys",
   "devDependencies": {
-    "tape": "4.6.0",
+    "@types/chai": "^3.4.30",
+    "@types/mocha": "^2.2.29",
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "publish": "^0.6.0",
     "typings": "^1.3.1"
   }
 }

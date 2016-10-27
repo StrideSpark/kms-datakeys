@@ -1,5 +1,6 @@
 import * as AWS from 'aws-sdk';
 import * as crypto from 'crypto';
+import {KMS} from 'aws-sdk';
 
 const algorithm = 'aes-256-cbc';
 

@@ -5,7 +5,12 @@
     "target": "es6",
     "sourceMap": true,
     "strictNullChecks": true,
-    "noResolve": true
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/@stridespark/*-types"
+      ]
+    }
   },
   "exclude": [
     "node_modules"

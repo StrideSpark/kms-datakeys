@@ -5,16 +5,12 @@ import { assert } from 'chai';
 AWS.config.region = process.env['AWS_DEFAULT_REGION'] = 'us-west-2';
 
 describe('kms integration test', function () {
-    it("does the thing", function (done) {
+    it("does the thing", async function () {
+        this.timeout(20000); //because megan was on a plane while testing this
         const kms = new AWS.KMS();
         const input = { secret: 'shhh' };
-        encryptWithKms(kms, process.env.KEY_ID, input)
-            .then(encrypted => decryptWithKms<Object>(kms, encrypted.encryptedKey, encrypted.encryptedObj))
-            .then(result => assert.deepEqual(result, input))
-            .then(() => done())
-            .catch(err => {
-                console.error("This is likely failing because you have not set the env var KEY_ID. Go to AWS --> IAM --> get the key id for credstash-test");
-                done(err)
-            });
+        const encrypted = await encryptWithKms(kms, process.env.KEY_ID, input);
+        const result = await decryptWithKms<Object>(kms, encrypted.encryptedKey, encrypted.encryptedObj);
+        assert.deepEqual(result, input)
     })
 });

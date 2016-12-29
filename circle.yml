@@ -6,7 +6,7 @@ dependencies:
     - mv circle.npmrc ~/.npmrc
 test:
   pre:
-    - typings install && tsc
+    - tsc
   post:
     - mv coverage/* $CIRCLE_ARTIFACTS/
 deployment:

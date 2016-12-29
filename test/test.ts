@@ -1,11 +1,11 @@
-import { encryptWithKms, decryptWithKms } from '../index';
+import { encryptWithKms, decryptWithKms } from '../src/index';
 import * as AWS from 'aws-sdk';
 import { assert } from 'chai';
 
 AWS.config.region = process.env['AWS_DEFAULT_REGION'] = 'us-west-2';
 
-describe('kms integration test', function() {
-    it("does the thing", function(done) {
+describe('kms integration test', function () {
+    it("does the thing", function (done) {
         const kms = new AWS.KMS();
         const input = { secret: 'shhh' };
         encryptWithKms(kms, process.env.KEY_ID, input)

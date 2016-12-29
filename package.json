@@ -11,19 +11,23 @@
   "author": "",
   "license": "MIT",
   "peerDependencies": {
-    "aws-sdk": ">=2.6.12"
+    "aws-sdk": ">=2.7.19"
   },
+  "files": [
+    "src/**/*.js",
+    "src/**/*.d.ts"
+  ],
   "repository": "StrideSpark/kms-datakeys",
   "devDependencies": {
     "@stridespark/aws-sdk-types": "1.0.0",
-    "@types/chai": "^3.4.30",
-    "@types/mocha": "^2.2.29",
-    "@types/node": "6.0.45",
-    "chai": "^3.5.0",
-    "istanbul": "^0.4.4",
-    "mocha": "^2.5.3",
-    "publish": "^0.6.0",
-    "typescript": "^2.0.6",
-    "aws-sdk": "2.6.12"
+    "@types/chai": "3.4.34",
+    "@types/mocha": "2.2.35",
+    "@types/node": "6.0.54",
+    "chai": "3.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.2.0",
+    "publish": "0.6.0",
+    "typescript": "2.1.4",
+    "aws-sdk": "2.7.19"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "kms-datakeys",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "encrypt / decrypt customer secrets using kms datakeys (with promises and typescript definitions)",
   "main": "src/index",
   "scripts": {

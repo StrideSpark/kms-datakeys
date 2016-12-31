@@ -2,7 +2,7 @@
   "name": "kms-datakeys",
   "version": "1.3.0",
   "description": "encrypt / decrypt customer secrets using kms datakeys (with promises and typescript definitions)",
-  "main": "src/index.js",
+  "main": "src/index",
   "scripts": {
     "test": "KEY_ID=3b013fd4-5640-4076-ab8c-296dedf225e5 istanbul cover _mocha",
     "2npm": "tsc --declaration && publish"

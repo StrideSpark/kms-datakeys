@@ -2,7 +2,7 @@
   "name": "kms-datakeys",
   "version": "1.3.1",
   "description": "encrypt / decrypt customer secrets using kms datakeys (with promises and typescript definitions)",
-  "main": "src/index",
+  "main": "src/index.js",
   "scripts": {
     "test": "KEY_ID=3b013fd4-5640-4076-ab8c-296dedf225e5 istanbul cover _mocha",
     "2npm": "tsc --declaration && publish"
@@ -21,12 +21,12 @@
     "@stridespark/aws-sdk-types": "1.0.0",
     "@types/chai": "3.4.34",
     "@types/mocha": "2.2.35",
-    "@types/node": "6.0.54",
+    "@types/node": "6.0.57",
     "chai": "3.5.0",
     "istanbul": "0.4.5",
     "mocha": "3.2.0",
     "publish": "0.6.0",
-    "typescript": "2.1.4",
-    "aws-sdk": "2.7.19"
+    "typescript": "2.0.10",
+    "aws-sdk": "2.7.21"
   }
 }
